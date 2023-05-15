@@ -56,12 +56,12 @@ while key != 27:                                                   # While Esc k
 
     # Exit if snake crosses the boundaries (Uncomment to enable)
     #if snake[0][0] == 0 or snake[0][0] == 19 or snake[0][1] == 0 or snake[0][1] == 59: break
-
+  # Exit if snake crosses the boundaries (Uncomment to enable)
     # If snake runs over itself
     if snake[0] in snake[1:]: break
 
     
-    if snake[0] == food:                                            # When snake eats the food
+    if snake[0] == food:                                            
         food = []
         score += 1
         while food == []:
@@ -76,3 +76,7 @@ while key != 27:                                                   # While Esc k
 curses.endwin()
 print("\nScore - " + str(score))
 print("http://bitemelater.in\n")
+  # Exit if snake crosses the boundaries (Uncomment to enable)
+   If snake crosses the boundaries, make it enter from the other side
+
+
